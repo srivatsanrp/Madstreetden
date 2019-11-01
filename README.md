@@ -69,7 +69,7 @@ A streaming application which reads data from realtime bitcoin transactions.
     
    Display the bitcoin addresses which has the most aggregate value in transactions in the last 3 hour
     
-    http://127.0.0.1:5000/high_value_addr
+    http://127.0.0.1:5000/high
 
 
     
