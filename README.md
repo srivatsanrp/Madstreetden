@@ -13,7 +13,7 @@ A streaming application which reads data from realtime bitcoin transactions.
    
    Flask-RESTful - https://flask-restful.readthedocs.io/en/latest/
    
-   Python3-pip - sudo apt-get install python3-pip
+   Python3-pip
    
    Kafka - https://kafka.apache.org/quickstart
    
@@ -23,6 +23,7 @@ A streaming application which reads data from realtime bitcoin transactions.
 
    Install follwoing commands in the terminal:
     
+    sudo apt-get install python3-pip
     pip3 install redis
     pip3 install pykafka
     pip3 install flask-restful
