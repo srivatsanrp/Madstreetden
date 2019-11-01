@@ -9,7 +9,6 @@ r = redis.Redis()
 app = Flask(__name__)
 api = Api(app)
 
-
 class showTransactions(Resource):
     def get(self):
         dic = {}
@@ -19,7 +18,6 @@ class showTransactions(Resource):
             dic[inx] = json.loads(i.decode("utf-8"))
             inx += 1
         return dic
-
 
 class transactionsCount(Resource):
     def get(self, min_value=None):
@@ -37,8 +35,6 @@ class transactionsCount(Resource):
                 return dic[min_value]
 
       
-
-
 class highValueAddr(Resource):
     def get(self):
         
@@ -48,8 +44,6 @@ class highValueAddr(Resource):
                 dic[ikey.decode("utf-8")[1:]] = int(r.get(ikey).decode("utf-8"))
             sorted_x = sorted(dic.items(), key=operator.itemgetter(1), reverse=True)
             return sorted_x[:100]
-
-
 
 api.add_resource(showTransactions, '/transactions')
 api.add_resource(transactionsCount, '/transactions_count_per_minute/<min_value>', '/count_per_minute/')
