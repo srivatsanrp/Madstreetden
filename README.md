@@ -34,7 +34,7 @@ A streaming application which reads data from realtime bitcoin transactions.
    Start Zookeeper server using command:
    
     bin/zookeeper-server-start.sh config/zookeeper.properties
-    :
+    
    Start Kafka server using command:
     
     bin/kafka-server-start.sh config/server.properties
