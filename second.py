@@ -34,14 +34,5 @@ for message in consumer:
         r.ltrim("transactions", 0, 99)  
         print(message.offset)
 
-        for i in jsonVar["x"]["out"]:
-            if not i["spent"]:
-                    
-                if r.exists(pre + str(i["addr"])):
-                        r.set(pre + str(i["addr"]), str(int(i["value"]) + int(r.get(pre + str(i["addr"])))), ex=10800)
-                else:
-                        r.set(pre + str(i["addr"]), str(i["value"]), ex=10800)
-            else:
-                 r.set(pre + str(i["addr"]), str("0"), ex=10800)
-
+        
 
