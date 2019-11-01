@@ -26,8 +26,8 @@ A streaming application which reads data from realtime bitcoin transactions.
     pip3 install redis
     pip3 install pykafka
     pip3 install flask-restful
-    pip3 websocket-client 
-    pip3 apscheduler
+    pip3 install websocket-client 
+    pip3 install apscheduler
     
   # Deployment
  
