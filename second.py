@@ -3,7 +3,6 @@ import redis
 import json
 from pykafka import KafkaClient
 from pykafka.common import OffsetType
-from pykafka.exceptions import SocketDisconnectedError
 from apscheduler.schedulers.background import BackgroundScheduler
 
 def count_txn_rate():
