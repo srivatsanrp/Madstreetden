@@ -1,7 +1,5 @@
 import json
-from pykafka import KafkaClient
-from pykafka.exceptions import SocketDisconnectedError
-from pykafka.exceptions import LeaderNotAvailable 
+from pykafka import KafkaClient 
 from websocket import create_connection
 
 client = KafkaClient(hosts="localhost:9092")
